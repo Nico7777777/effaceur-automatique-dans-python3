@@ -14,10 +14,15 @@ if __name__ == "__main__":
 
 
     pag.moveTo(width_of_screen/2, height_of_screen/2)
-'''
+
     pag.leftClick()
 
-    directory = "\"New Folder 1\"/" #c'est le path pour le directeur qui sera efface
-    # ensemble avec tout ses fichiers et les directeurs interieur
-    pag.typewrite("rm -r " + directory)
-    appuyez_un_cle(["enter"])'''
+    directeur = "\"New Folder 1" #c'est le path pour le directeur qui sera efface
+    pag.typewrite("del "+ directeur)
+    appuyez_un_cle(["enter"])
+
+    pag.typewrite("y")
+    appuyez_un_cle(["enter"])
+
+    pag.typewrite("rmdir " + directeur)
+    appuyez_un_cle(["enter"])
