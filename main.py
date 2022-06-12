@@ -9,13 +9,15 @@ def appuyez_un_cle(les_cles: list):
         pag.keyUp( i )
 
 if __name__ == "__main__":
-    appuyez_un_cle(["CTRL", "alt", "t"])
+    appuyez_un_cle(["WIN", "r"])
+    appuyez_un_cle(["c", "m", "d", "enter"])
 
-    pag.countdown(3)
+
     pag.moveTo(width_of_screen/2, height_of_screen/2)
+'''
     pag.leftClick()
 
     directory = "\"New Folder 1\"/" #c'est le path pour le directeur qui sera efface
     # ensemble avec tout ses fichiers et les directeurs interieur
     pag.typewrite("rm -r " + directory)
-    appuyez_un_cle(["enter"])
+    appuyez_un_cle(["enter"])'''
